@@ -1,0 +1,8 @@
+fastapi
+pydantic
+python-dotenv
+langchain-google-genai
+browser-use
+langchain-openai
+uvicorn
+requests

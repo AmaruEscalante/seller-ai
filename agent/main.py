@@ -22,8 +22,7 @@ llm = ChatGoogleGenerativeAI(
 async def run_search(browser_context):
     agent = Agent(
         browser_context=browser_context,
-        # task="open doordash and get me sushi from Azao (consider that might open a new tab), add one california roll to the cart, and write $0 for tip.",
-        task="open facebook and wait for a friend to send you a message and then reply to it with 'hi from google!'",
+        task="open facebook marketplace and create vehicle listing. wait for the user to upload the images for 15 seconds, then continue filling the rest of the information: toyota corolla, price 15000",
         llm=llm,
     )
     result = await agent.run()
